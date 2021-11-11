@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggos</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Hind+Madurai|Josefin+Slab:400,600" rel="stylesheet">
+</head>
+<body>
+    <div class="outer-container">
+        <nav>
+            <div id="title">
+                DOGGOS
+            </div>
+            <div id="nav-buttons">
+                <span>
+                    <a href="https://www.reddit.com/r/dogs/"><img src="./assets/reddit.png" alt="reddit" width="50px"></a>
+                </span>
+                <span>
+                    <a href="https://www.youtube.com/user/martamisericordiamar"><img src="./assets/youtube.png" alt="YouTube" width="50px"></a>
+                </span>
+                <span>
+                    <a href="https://www.instagram.com/dogsofinstagram/?hl=en"><img src="./assets/instagram.png" alt="Instagram" width="50px"></a>
+                </span>
+            </div>
+        </nav>
+        <main>
+            <ul>
+                <li>
+                    <img class='dog-image' src="./assets/dog1.jpg" alt="">
+                    <div>Moki</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog2.jpg" alt="">
+                    <div>Nix</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog3.jpg" alt="">
+                    <div>Daphne</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog4.jpg" alt="">
+                    <div>Vixen</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog5.jpg" alt="">
+                    <div>Toby</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog6.jpg" alt="">
+                    <div>Ralph</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog7.jpg" alt="">
+                    <div>Bailey</div>
+                </li>
+                <li>
+                    <img class='dog-image' src="./assets/dog8.jpg" alt="">
+                    <div>Lola</div>
+                </li>
+            </ul>
+        </main>
+        <footer>
+            © Dog Lovers United <span id="year"></span>
+        </footer>
+    </div>
+    <script src='./index.js'></script>
+    <script>
+        window.onload = function() {
+            const today = new Date
+            document.getElementById('year').innerHTML = `${today.getFullYear()}`
+        }
+    </script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>

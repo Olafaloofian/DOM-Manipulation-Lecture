@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <div
+      style="
+        box-sizing: border-box;
+        position: initial;
+        width: 8.5in;
+        font-weight: normal;
+        font-style: normal;
+        border-color: black;
+        border-style: solid;
+        border-width: 2px;
+        padding: 0.5in 0.5in 0.5in 0.5in;
+      "
+    >
+      <h4
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 10pt;
+          color: rgb(102, 102, 102);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Introductory Course | DOM Manipulation</span
+        >
+      </h4>
+      <h1
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 28pt;
+          color: rgb(0, 51, 153);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Activity: </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >JS Graffiti</span
+        >
+      </h1>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >In this activity, we challenge you to use JavaScript to deface an
+          HTML page as it's displayed in your browser, using JavaScript.</span
+        >
+      </p>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Select elements and change their styles; give them goofy colors,
+          borders, and even -dare we suggest it- </span
+        ><a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms"
+          target="_blank"
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >transformations.</a
+        >
+      </p>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >The only rule is that you </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: bold;
+            font-style: normal;
+          "
+          >cannot</span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          edit the HTML or CSS inside </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >index.html</span
+        >
+      </p>
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Setup</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Start by navigating to this directory (within this repository):</span
+        >
+      </p>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 5in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Doggo-Directory.jpg"
+      />
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+        "
+      >
+      </p>
+      <ol
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Open the folder in your code editor and terminal of
+            choice.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Open </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.html</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            and </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.js</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            in your code editor</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Open </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.html</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            in your browser. It should looks something like this:</span
+          ><span></span>
+        </li>
+      </ol>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 7.5in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Main-Page.jpg"
+      /><br />
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >1. Select an element</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Let's start by selecting the header "Doggos" from the top of the
+          page.</span
+        >
+      </p>
+      <ol
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Look for the header in </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.html</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            (it will be represented by a div)</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >What property of the header div could we use to select it with </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >querySelector</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >?</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Open </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.js</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            in your code editor</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Select the header by it's id:</span
+          ><span></span>
+        </li>
+      </ol>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 5.5in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/ID-Selector.jpg"
+      /><br />
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >2. Modify the styling of an element</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Now that </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >header</span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          is defined as a DOM element, let's try changing how the header text is
+          aligned:</span
+        >
+      </p>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 5.5in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Align-Header.jpg"
+      />
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Refresh the page in your browser. The header text "Doggos" should
+          have shifted to the left:</span
+        >
+      </p>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 7.5in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Main-Page-Header-Shifted.jpg"
+      /><br />
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >3. Select multiple elements</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Let's see how this works if we want to change the styling of </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: bold;
+            font-style: normal;
+          "
+          >multiple</span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          elements:</span
+        >
+      </p>
+      <ol
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Look for the dog images in </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.html</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            (they will be represented by img tags)</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Find a property that each dog image has, so that we can use it to
+            select them with </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >querySelectorAll</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Return to </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >index.js</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            in your code editor</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Select the dog images:</span
+          ><span></span>
+        </li>
+      </ol>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 5.333333333333333in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Image-Selector.jpg"
+      /><br />
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >4. Modify the styling of multiple elements</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Now that </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >dogImages</span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          is defined as an array of DOM elements, we can manipulate the styling
+          of those elements.</span
+        >
+      </p>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >We'll need to run code to change the styling of </span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: bold;
+            font-style: normal;
+          "
+          >each</span
+        ><span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          element in the array, so we'll use a loop:</span
+        >
+      </p>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 5.333333333333333in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Dog-Loop.jpg"
+      />
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >Refresh the page in your browser. The image corners should be rounded
+          now, like this:</span
+        >
+      </p>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 7.5in;
+          height: 3.714733542319749in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Main-Page-Rounded.jpg"
+      /><br />
+      <h2
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 18pt;
+          color: rgb(23, 108, 238);
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >5. Research new ways of styling with JavaScript</span
+        >
+      </h2>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+          >With what time you have left, try making the following modifications
+          to the DOM with JavaScript:</span
+        >
+      </p>
+      <ul
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Make the dog's names align to the left</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Change the color of the footer text</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Flip the images so that they are all upside down</span
+          ><span></span>
+        </li>
+      </ul>
+      <p
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <span
+          style="
+            box-sizing: border-box;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+          "
+        >
+          Here are some steps to think through if you get stuck:</span
+        >
+      </p>
+      <ol
+        style="
+          box-sizing: border-box;
+          font-family: Arial;
+          font-size: 12pt;
+          position: initial;
+          font-weight: normal;
+          font-style: normal;
+          margin: 0in 0in 0in 0in;
+        "
+      >
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Look at the page in your browser.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Think of something you would like to change visually.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Next, look at the html in your code editor.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Find an attribute you can use to select the element(s) you want to
+            change.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Select that element in your JavaScript file, using querySelector or
+            querySelectorAll. Use </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >console.log</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            to make sure you have selected the element(s) you want.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Figure out what CSS property you want to use to make the change
+            you're going for. You can use </span
+          ><a
+            href="https://www.w3schools.com/cssref/"
+            target="_blank"
+            style="font-family: Arial"
+            >this resource</a
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            to search for applicable styling rules.</span
+          ><span></span>
+        </li>
+        <li
+          style="
+            box-sizing: border-box;
+            font-family: Arial;
+            font-size: 12pt;
+            position: initial;
+            font-weight: normal;
+            font-style: normal;
+            margin: 0in 0in 0in 0in;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >Change that property of the DOM element you've selected. For
+            example, if you want to change the </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >border-style</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+          >
+            of an element named </span
+          ><span
+            style="
+              box-sizing: border-box;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+            "
+            >footer</span
+          ><span
+            style="
+              box-sizing: border-box;
+              font-family: Arial;
+              font-size: 12pt;
+              position: initial;
+              font-weight: normal;
+              font-style: normal;
+              margin: 0in 0in 0in 0in;
+            "
+            >:</span
+          ><span></span>
+        </li>
+      </ol>
+      <img
+        style="
+          box-sizing: border-box;
+          position: initial;
+          width: 6.020833333333333in;
+          font-weight: normal;
+          font-style: normal;
+        "
+        src="./assets/Border-Style.jpg"
+      /><br />
+    </div>
+  </body>
+</html>
