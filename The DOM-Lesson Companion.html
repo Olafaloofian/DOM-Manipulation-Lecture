@@ -45,10 +45,10 @@
         <div class="question-box">
             <h2 class="question-title" id="title3">3. Selecting a single Element with JavaScript</h2>
             <div class="inner-box">
-                <div class="question">Define headerTag by selecting the header from the HTML below:</div>
+                <div class="question">Define headerTag by selecting the header from the HTML below (use the "children" property):</div>
                 <div class="input-response">
                     <div class="code-blocks">
-                        <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
+                        <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>&emsp;&emsp;&lt;div&gt;Coding is cool.&lt;/div&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
                         <div>
                             <span class="code-text">let headerTag = </span><input type="text" id="input3">
                         </div>
@@ -61,81 +61,97 @@
         <div class="question-box">
             <h2 class="question-title" id="title4">4. Selecting a single Element with JavaScript II</h2>
             <div class="inner-box">
-                <div class="question">Define headerTag by selecting the DOM element with the class "main-header":</div>
+                <div class="question">Define headerTag by selecting the header from the HTML below (use a CSS HTML selector):</div>
                 <div class="input-response">
                     <div class="code-blocks">
-                        <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;I am a web page!&lt;/h1&gt;<br>&emsp;&emsp;&lt;h1 class="main-header"&gt;Hello World!&lt;/h1&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
+                        <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;div&gt;Yay for HTML!&lt;/div&gt;<br>&emsp;&emsp;&lt;h1&gt;Hello World!&lt;/h1&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
                         <div>
                             <span class="code-text">let headerTag = </span><input type="text" id="input4">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button4" onclick="checkInputQuestion(4, ['document.body.children[1]','document.querySelector(`.main-header`)'])">Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button4" onclick="checkInputQuestion(4, ['document.body.children[0]', 'document.querySelector(`h1`)'])">Submit</button></div>
         </div>
 
         <div class="question-box">
-            <h2 class="question-title" id="title5">5. Selecting Multiple Elements with JavaScript</h2>
+            <h2 class="question-title" id="title5">5. Selecting a single Element with JavaScript III</h2>
+            <div class="inner-box">
+                <div class="question">Define headerTag by selecting the DOM element with the text 'Hello World' (use a CSS class selector):</div>
+                <div class="input-response">
+                    <div class="code-blocks">
+                        <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;I am a web page!&lt;/h1&gt;<br>&emsp;&emsp;&lt;h1 class="main-header"&gt;Hello World!&lt;/h1&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
+                        <div>
+                            <span class="code-text">let headerTag = </span><input type="text" id="input5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='submit-button'><button type="submit" id="button5" onclick="checkInputQuestion(5, ['document.body.children[1]','document.querySelector(`.main-header`)'])">Submit</button></div>
+        </div>
+
+        <div class="question-box">
+            <h2 class="question-title" id="title6">6. Selecting Multiple Elements with JavaScript</h2>
             <div class="inner-box">
                 <div class="question">Define headerTags as a list of both h1 tags from the HTML below:</div>
                 <div class="input-response">
                     <div class="code-blocks">
                         <div class="code-text bordered">&lt;html&gt;<br>&emsp;&lt;body&gt;<br>&emsp;&emsp;&lt;h1&gt;I am a web page!&lt;/h1&gt;<br>&emsp;&emsp;&lt;h1 class="main-header"&gt;Hello World!&lt;/h1&gt;<br>&emsp;&lt;/body&gt;<br>&lt;/html&gt;</div>
                         <div>
-                            <span class="code-text">let headerTags = </span><input type="text" id="input5">
+                            <span class="code-text">let headerTags = </span><input type="text" id="input6">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button5" onclick='checkInputQuestion(5, ["document.querySelectorAll(`h1`)"])'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button6" onclick='checkInputQuestion(6, ["document.querySelectorAll(`h1`)"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
-            <h2 class="question-title" id="title6">6. Changing an Element's Styles</h2>
+            <h2 class="question-title" id="title7">7. Changing an Element's Styles</h2>
             <div class="inner-box">
                 <div class="question">Make myHeader's background color black:</div>
                 <div class="input-response">
                     <div class="code-blocks">
                         <div class="code-text bordered">let myHeader = document.querySelector&#40;'.my-header'&#41;</div>
                         <div>
-                            <input type="text" id="input6">
+                            <input type="text" id="input7">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button6" onclick='checkInputQuestion(6, ["myHeader.style.backgroundColor=`black`"])'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button7" onclick='checkInputQuestion(7, ["myHeader.style.backgroundColor=`black`"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
-            <h2 class="question-title" id="title7">7. Changing an Element's Styles</h2>
+            <h2 class="question-title" id="title8">8. Changing an Element's Styles II</h2>
             <div class="inner-box">
                 <div class="question">Make myHeader's color white:</div>
                 <div class="input-response">
                     <div class="code-blocks">
                         <div class="code-text bordered">let myHeader = document.querySelector&#40;'.my-header'&#41;<br>myHeader.style.backgroundColor = 'black'</div>
                         <div>
-                            <input type="text" id="input7">
+                            <input type="text" id="input8">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button7" onclick='checkInputQuestion(7, ["myHeader.style.color=`white`"])'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button8" onclick='checkInputQuestion(8, ["myHeader.style.color=`white`"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
-            <h2 class="question-title" id="title8">8. Changing an Element's Styles</h2>
+            <h2 class="question-title" id="title9">9. Changing an Element's Styles III</h2>
             <div class="inner-box">
                 <div class="question">Make myHeader's font family Arial:</div>
                 <div class="input-response">
                     <div class="code-blocks">
                         <div class="code-text bordered">let myHeader = document.querySelector&#40;'.my-header'&#41;<br>myHeader.style.backgroundColor = 'black'<br>myHeader.style.color = 'white'</div>
                         <div>
-                            <input type="text" id="input8">
+                            <input type="text" id="input9">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button8" onclick='checkInputQuestion(8, ["myHeader.style.fontFamily=`Arial`"])'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button9" onclick='checkInputQuestion(9, ["myHeader.style.fontFamily=`Arial`"])'>Submit</button></div>
         </div>
 
     </div>
