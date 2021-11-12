@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button3" onclick="checkInputQuestion(3, 'document.querySelector(h1)')">Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button3" onclick="checkInputQuestion(3, ['document.body.children[0]', 'document.querySelector(`h1`)'])">Submit</button></div>
         </div>
 
         <div class="question-box">
@@ -71,7 +71,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button4" onclick="checkInputQuestion(4, 'document.querySelector(.main-header)')">Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button4" onclick="checkInputQuestion(4, ['document.body.children[1]','document.querySelector(`.main-header`)'])">Submit</button></div>
         </div>
 
         <div class="question-box">
@@ -87,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button5" onclick='checkInputQuestion(5, "document.querySelectorAll(h1)")'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button5" onclick='checkInputQuestion(5, ["document.querySelectorAll(`h1`)"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button6" onclick='checkInputQuestion(6, "myHeader.style.backgroundColor=black")'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button6" onclick='checkInputQuestion(6, ["myHeader.style.backgroundColor=`black`"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
@@ -119,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button7" onclick='checkInputQuestion(7, "myHeader.style.color=white")'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button7" onclick='checkInputQuestion(7, ["myHeader.style.color=`white`"])'>Submit</button></div>
         </div>
 
         <div class="question-box">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class='submit-button'><button type="submit" id="button8" onclick='checkInputQuestion(8, "myHeader.style.fontFamily=Arial")'>Submit</button></div>
+            <div class='submit-button'><button type="submit" id="button8" onclick='checkInputQuestion(8, ["myHeader.style.fontFamily=`Arial`"])'>Submit</button></div>
         </div>
 
     </div>
@@ -157,16 +157,12 @@
             }
         }
 
-        function checkInputQuestion(questionNumber, stringAnswer) {
+        function checkInputQuestion(questionNumber, stringAnswerArray) {
             let input = document.getElementById(`input${questionNumber}`)
             let button = document.getElementById(`button${questionNumber}`)
             let title = document.getElementById(`title${questionNumber}`)
-            if (!input.value.includes("`") && !input.value.includes("'") && !input.value.includes('"')) {
-                incorrectEffect(button, title)
-                return
-            }
-            let inputRemoveExtraneous = input.value.replace(/\s/g, '').replace(/\`/g, '').replace(/\'/g, '').replace(/\"/g, '')
-            if ( inputRemoveExtraneous == stringAnswer ) {
+            let inputRemoveExtraneous = input.value.replace(/\s/g, '').replace(/\'/g, "\`").replace(/\"/g, "\`")
+            if ( stringAnswerArray.includes(inputRemoveExtraneous) ) {
                 correctEffect(button, title)
                 input.disabled = true
             } else {
